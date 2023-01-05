@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우선순위</title>
+    <style>
+        *{color: brown;}    /*0*/
+        .a{color: aquamarine;}  /*10*/
+        #b{color: blue;}    /*100*/
+
+        p{color: rgb(172, 112, 230) !important;}    /*최고높은순위*/
+
+    </style>
+</head>
+<body>
+    <p>부여한 속성이 적용되지 않는다면</p>
+    <p class="a" id="b" style="color: cornflowerblue;" >더 높은 순위를 갖는 선택자가 있었는지 의심해봐야 한다.</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* reset */
+*{margin: 0; padding:0; list-style: none; box-sizing: border-box; font-family: "맑은 고딕"; color: #333;}
+a{text-decoration: none; display: block;}
+/* a는 크기조절위해 ,img는 img사이간격없애기 */
+img{display: block;}
+.hidden{display: none;}
+
+/* wrap */
+#wrap{width: 960px; height: 1200px;margin: auto; }
+
+/* header logo*/
+header{width: 960px; height: 150px; background-color: bisque; float: left;}
+/*menu밑에 짤린거 올리기=밑에 main이 올라옴->clear:both 해줌*/
+/* = header와 slide 벌어짐 해결 */
+header h1{float: left; width: 250px; height: 150px; }
+
+/* header nav  */
+header nav{float: right; position: relative; z-index: 5;}
+/* slide이미지 앞으로 menu가 올라오게 하기 위한 position+zindex */
+
+/* 1차,2차공통효과 */
+header nav ul li a{padding: 20px 30px; text-align: center;}
+
+/* 1차메뉴 */
+header nav ul.gnb{}
+header nav ul.gnb > li{float: left;}
+header nav ul.gnb > li > a{}
+
+/* 2차메뉴 */
+header nav ul.gnb > li > ul.sub{}
+header nav ul.gnb > li > ul.sub li{}
+header nav ul.gnb > li > ul.sub li a{}
+
+/*main - slide area*/
+#main-slide{clear: both;}

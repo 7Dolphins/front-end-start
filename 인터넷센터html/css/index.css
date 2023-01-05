@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* reset  */
+body{background-color: rgba(20, 13, 13, 0.8)}
+*{margin: 0; padding: 0; box-sizing: border-box; list-style: none; color: aliceblue;}
+.hidden{display: none;}
+a{text-decoration: none; color: black; display: block;}
+img{display: block;}
+
+/* wrap  */
+#wrap{width: 1000px;  margin: auto;}
+
+/* header */
+header{width: 100%; height:150px; float: left;}
+header h1{float: left;}
+
+/* nav  */
+header nav{float: right; position: relative; z-index: 5;}
+
+/* 1차메뉴  */
+header nav ul.gnb{margin-top: 105px;}
+header nav ul.gnb> li{float: left;}
+header nav ul.gnb> li>a{  color: rgb(245, 252, 255); padding: 10px 30px;}
+header nav ul.gnb> li:hover a{background-color: rgb(194, 194, 209); color: rgb(35, 42, 49);}
+
+
+/* 2차메뉴 */
+header nav ul.gnb li ul.sub li{display: none;}
+header nav ul.gnb> li:hover ul.sub li{display: block;}
+header nav ul.gnb li ul.sub li a{text-align: center; background-color: rgb(197, 189, 179); padding: 10px 0 ;}
+header nav ul.gnb li ul.sub li a:hover{text-decoration: underline;}
+
+
+/* main-slide */
+#main-slide{clear: both; width: 1000px; height: 350px; overflow: hidden; position: relative;}
+#main-slide ul{width: 3000px;}
+#main-slide ul li{float: left;}
+#main-slide ul li a img{width: 1000px; height: 330px;}
+#main-slide .banner{width: 200px; height: 100px; background-color: rgb(141, 163, 156); position: absolute; z-index: 2; top:0 ; left:0; right: 0; bottom: 0; margin: auto; border-radius: 10px; text-align: center;}
+#main-slide .banner h3{padding: 10px 0; color:blue; font-weight: bold;}
+#main-slide .banner p{padding: 0}
+
+/* notice partner  */
+.sec-all{float: left;; width: 490px; height: 300px; margin-top: 10px;}
+
+/* notice */
+.sec-all div h3{text-align: center; border-bottom: 2px solid blue; padding: 10px;}
+.sec-all div table{width: 100%; height: 220px; border-collapse: collapse;}
+.sec-all div table tr:nth-child(even){background-color: gray;}
+.sec-all div table tr td:hover{text-decoration: underline; cursor: pointer;}
+
+/* partner */
+.partner{margin-left: 20px;}
+.partner > div{width: 480px; overflow: hidden;}
+.partner div img{height: 220px}
+
+
+/* icon */
+.icon{width: 850px; height: 200px; margin: auto;}
+.icon figure{float: left; width: 270px; height:250px; text-align: center; margin-bottom: 30px;}
+.icon figure:nth-child(2){margin: 0 10px;}
+.icon figure img{width: 20%; margin: auto; padding : 30px 0;}
+.icon figure figcaption h3{color: rgb(59, 59, 231); margin-bottom: 10px;}
+.icon figure:hover{background-color: rgb(181, 191, 199); opacity: 0.4; transition: all 0.9; cursor: pointer;}
+
+/* footer  */
+footer{clear: both; background-color: rgb(58, 122, 241); width: 960px; height: 100px; color: aliceblue;
+}
+
+footer div{float: left; }
+footer div.foot-left{width: 480px; padding: 30px 40px;}
+footer div.foot-left>nav>ul > li{float: left;}
+footer div.foot-left>nav>ul > li > a{color: aliceblue; padding: 0 10px;}
+
+
+footer div.foot-right{width: 480px;}
+footer div.foot-right address{font-style: normal; padding: 10px; font-size: 14px;}

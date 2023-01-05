@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 초기화 */
+*{margin: 0; padding: 0;}
+
+/* wrap화면 가운데 정렬 */
+#wrap{
+    width: 960px;
+    height: 1200px;
+    background-color: rgb(191, 241, 225);
+    margin: auto;
+}
+
+/* header area */
+header{
+    width: 100%; height: 150px; background-color: antiquewhite;
+}
+header h1{width: 200px; height:100px; background-color: brown;
+text-align: center; line-height: 100px; color: antiquewhite;
+margin-top: 25px; float: left;
+}
+header nav{float: right; margin-top: 100px;}
+header nav ul li{list-style: none; display: inline-block;}
+header nav ul li a{display: block; width: 150px; height: 50px; background-color: aquamarine; color: rgb(58, 35, 5);
+text-decoration: none; text-align: center; line-height: 50px;
+}
+header nav ul li a:hover{background-color: cornflowerblue;}
+
+/*main slide area*/
+#main-slide{width: 960px; height: 400px; background-color: darkseagreen;
+    }
+#main-slide h2{
+    text-align: center; line-height: 400px;
+}
+
+
+/* c영역 */
+#sec-wrap{width: 960px; height: 500px; }
+#sec-wrap div.con{width:480px; height:300px; float: left;}
+#sec-wrap div.notice{background-color: aqua;}
+#sec-wrap div.partner{background-color: blanchedalmond;}
+#sec-wrap div h2{text-align: center;}
+#sec-wrap div.icon{width:320px; height:200px; float: left;}
+#sec-wrap div.icon1{background-color: deepskyblue;}
+#sec-wrap div.icon2{background-color: rgb(88, 144, 163);}
+#sec-wrap div.icon3{background-color: rgb(19, 72, 90);}
+
+/* footer영역 */
+footer{clear: both; width: 960px; height: 150px; background-color: rgb(199, 197, 197);}

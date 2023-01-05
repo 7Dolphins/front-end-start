@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormQuiz</title>
+</head>
+<body>
+    <h3>Quiz1 - 회원가입 문서의 출력과정을 보고 제작하여보자.</h3>
+    <form action="#">
+        <fieldset>
+            <legend>필수정보</legend>
+            <label for="name1">이름:</label>
+            <input type="text" id="name1" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>선택 정보</legend>
+            <label for="birthday">생일:</label>
+            <input type="date" id="birthday">
+        </fieldset>
+    </form>
+
+
+    <hr>
+<h3>Quiz2 - 신청과목, 메일링 문서의 출력결과를 보고 제작하여 보자.</h3>
+    <form action="#">
+
+
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요 <small>(1과목만 가능)</small>  </p>
+            <p>
+                <input type="radio" id="speaking" name="subject">
+                <label for="speaking">회화</label>
+
+                <input type="radio" id="grammer" name="subject">
+                <label for="grammer">문법</label>
+
+                <input type="radio" id="writing" name="subject">
+                <label for="writing">작문</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 <small>(복수선택 가능)</small></p>
+            <p>
+                <input type="checkbox" id="speaking" name="mailing">
+                <label for="speaking">회화</label>
+
+                <input type="checkbox" id="grammer" name="mailing">
+                <label for="grammer">문법</label>
+
+                <input type="checkbox" id="writing" name="mailing">
+                <label for="writing">작문</label>
+
+            </p>
+        </fieldset>
+    </form>
+
+
+<hr>
+
+<h3>Quiz3 - 지원서 문서의 출력결과를 보고 제작하여 보자</h3>
+
+<h2>프론트엔드 개발자 지원서</h2>
+<h4>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</h4>
+<hr>
+<form action="#">
+
+    <fieldset>
+        <legend>개인정보</legend>
+        <label for="name">이름</label>
+        <input type="text" placeholder="공백없이 입력하세요" id="name" required>
+        <label for="number">연락처</label>
+        <input type="tel" name="number" id="number">
+    </fieldset>
+
+    <fieldset>
+        <legend>지원분야</legend>
+        <p><input type="radio" name="" id="">
+        <label for="">웹 퍼블리싱</label>
+    </p>
+            <p>
+        <input type="radio" name="" id="">
+        <label for="">웹 애플리케이션 개발</label>
+    </p>
+    <p>
+        <input type="radio" name="" id="">
+        <label for="">개발 환경 개선</label>
+    </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>지원동기</legend>
+        <textarea name="" id="" cols="40" rows="10" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+    </fieldset>
+    <input type="submit" value="전송하기">
+    <input type="reset" value="다시쓰기">
+</form>
+</body>
+</html>

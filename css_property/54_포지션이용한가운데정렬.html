@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position이용한 가운데 정렬</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        section{width: 500px; height: 400px; margin: auto;}
+
+        h2{margin: 10px 0;}
+
+        .parent{width: 500px; height: 400px; background-color: aquamarine;
+        position: relative;}
+
+        .child{width:100px; height:100px; position: absolute;}
+
+        .child1{background-color: rgb(155, 155, 245);
+        top:50%; left:50%;
+        transform: translate(-50%, -50%);
+        /*기준점은 정 가운데에 있는것이 맞음
+        그래서 한 변의 50%만큼 다시 반대로 이동해줌*/
+        }
+
+        .child2{background-color: blue;
+            top:50%; left:50%;
+            margin-top :-50px; margin-left: -50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>1.transform의 translate속성을 이용한 이동</h2>
+        <div class="parent">
+            <div class="child child1"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2.margin-top margin-left로 위치 이동</h2>
+        <div class="parent">
+            <div class="child child2"></div>
+        </div>
+    </section>
+</body>
+</html>

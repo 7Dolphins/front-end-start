@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+header{
+    width: 400px;
+    height: 100px;
+    background-color: darkseagreen;
+}
+
+header h1{
+float: left;
+width : 200px;
+height: 100px;
+
+}
+
+header ul li{float: left;}
+
+article {
+    width: 400px;
+    height: 150px;
+    background-color: cornflowerblue;
+}
+section {
+    width: 400px;
+    height: 250px;
+    background-color: rgb(12, 201, 138);
+}
+
+aside {
+    width: 400px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+footer {
+    width: 400px;
+    height: 50px;
+    background-color: rgb(189, 186, 155);
+}

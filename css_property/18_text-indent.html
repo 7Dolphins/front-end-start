@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>들여쓰기</title>
+    <style>
+        div.left{
+            border: 1px solid blue;
+            padding: 10px;
+            text-indent: 10px;
+            margin-bottom: 20px;
+        }
+        /* padding + text indent 이므로 20px */
+        .test{
+            border: 1px solid blue;
+            text-indent: 20px;
+            margin-bottom: 20px;
+        }
+        table{
+            border: 1px solid blue;
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td{
+            border: 1px solid blue;
+            text-indent: 20px;
+        }
+        /* 왼쪽으로 띄울때 padding으로 안하고 text-indent로 하기도 함 */
+    </style>
+</head>
+<body>
+    <div class="left">
+        On December 12, 2022, U.S. Citizenship and Immigration Services (USCIS) announced that it would automatically extend the validity of permanent resident cards (green cards) for lawful permanent residents (LPRs) who have applied for naturalization, i.e., citizenship. Procedurally, this will be implemented by adding a green card extension to the Form N-400 (Application for Naturalization) receipt. This change will serve as much-needed help for naturalization applicants due to longer processing times and may, in certain cases, eliminate the need to file Form I-90 (Application to Replace Permanent Resident Card), saving both time and money.
+    </div>
+    <div class="test">
+        On December 12, 2022, U.S. Citizenship and Immigration Services (USCIS) announced that it would automatically extend the validity of permanent resident cards (green cards) for lawful permanent residents (LPRs) who have applied for naturalization, i.e., citizenship. Procedurally, this will be implemented by adding a green card extension to the Form N-400 (Application for Naturalization) receipt.
+    </div>
+    <table>
+        <tr>
+            <td>On December 12, 2022, U.S. Citizenship</td>
+            <td>and Immigration Services (USCIS) </td>
+        </tr>
+        <tr>
+            <td>announced that it would automatically extend the validity</td>
+            <td> of permanent resident cards (green cards) for </td>
+        </tr>
+    </table>
+</body>
+</html>

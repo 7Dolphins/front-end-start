@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 첫번째 글자만 선택 ::first-letter */
+div::first-letter{font-size: 25px; color: chartreuse;}
+
+/* :first-of-type 동급구조에서 첫번째만 선택 */
+div:first-of-type{background-color: bisque;}
+
+/* :last-of-type 동급구조에서 맨 마지막 선택 */
+div:last-of-type{background-color: aqua;}
+
+/* :nth-child(n)  부모자식 구조에서 n번째 자식 선택 */
+section ul li:nth-child(3){color: blue;}
+
+/* section 부모 밑에 있는 3번째 자식을 선택 */
+section>:nth-child(3){background-color: aquamarine;}
+/* section 하위 의 3번째 자식까지 선택됨 */
+/* section :nth-child(3){background-color: aquamarine;} */
+
+/* ::before, ::after 현재 태그에 이전/다음에 추가를 할때 */
+article p::before
+{
+    content: "★";
+    color: red;
+    margin-right: 5px;
+}
+article::after
+{
+    content: "항목을 입력해 주세요!";
+    color: green;
+    font-size: 25px;
+}
+
+aside p{
+    float: left;
+}
+aside p::after{
+    content: "|";
+    padding:0 10px;
+    /* 양쪽만 패딩 주는것  */
+}
+
+aside :last-child::after{
+
+    content: "";
+}

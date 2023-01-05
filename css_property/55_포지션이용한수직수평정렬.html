@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 400px;height:250px;
+            background-color: aquamarine;
+            position: relative; /*기준*/
+        }
+        .item{width:100px; height:100px;
+        background: blue; position:absolute;}
+        
+        /* 수직정렬 */
+        .item1{
+            top: 0; bottom: 0;  margin:auto;
+        }
+
+        /* 수평정렬 */
+        .item2{
+            left:0 ; right: 0 ; margin:auto;
+        }
+
+        /* 수직,수평정렬(정가운데) */
+        .item3{
+            left:0; right:0; top:0; bottom: 0; margin:auto;
+        }
+
+        /* 글자를 수평으로 가운데정렬 */
+        .container4 h6{
+            position: absolute;
+            left:0; right:0; margin: auto;
+            width: 200px; height:30px;
+            background-color: chartreuse;
+            text-align: center;
+            line-height: 30px;
+        }
+        /* 글자를 수직으로 가운데정렬 */
+        .container5 h6{
+            position: absolute;
+            top:0; bottom:0; margin: auto;
+            width: 200px; height:30px;
+            background-color: chartreuse;
+            text-align: center;
+            line-height: 30px;
+        }
+        /* 글자를 박스 가운데정렬 */
+        .container6 h6{
+            position: absolute;
+            top:0; bottom:0; left:0; right:0; margin: auto;
+            width: 200px; height:30px;
+            background-color: chartreuse;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>수직정렬</h2>
+    <div class="container1 con">
+        <div class="item1 item"></div>
+    </div>
+    <h2>수평정렬</h2>
+    <div class="container2 con">
+        <div class="item2 item"></div>
+    </div>
+ 
+    <h2>수직+수평정렬(정가운데)</h2>
+    <div class="container3 con">
+        <div class="item3 item"></div>
+    </div>
+    
+    <hr>
+    <div class="container4 con">
+        <h6>글자를 수평으로 가운데 정렬</h6>
+    </div>
+    <hr>
+    <div class="container5 con">
+        <h6>글자를 수직으로 가운데 정렬</h6>
+    </div>
+    <hr>
+    <div class="container6 con">
+        <h6>글자를 상자 가운데 정렬</h6>
+    </div>
+</body>
+</html>

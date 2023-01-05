@@ -1,0 +1,7 @@
+
+/* google font 에서 가지고 온것 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* 사용 */
+.font{font-family: 'Lobster', cursive; font-size: 50px;
+}

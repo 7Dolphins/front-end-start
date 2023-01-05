@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* div화면 가운데 정렬 */
+#wrap {
+ width: 800px;
+ height: 400px;
+ /* background-color: aquamarine; */
+ margin: auto;
+ /* 가운데정렬 */
+}
+
+#header {
+    width: 800px;
+    height: 100px;
+    background-color: beige;
+}
+#logo{
+    color: aqua;
+}
+
+#nav{
+    width: 150px;
+    height: 200px;
+    background-color: cadetblue;
+    float: left;
+}
+    /* float은 우두머리처럼 나머지가 따라오는 경향 있음 */
+
+#gnb{
+    color: rgb(138, 255, 200);
+}
+
+#section{
+    width: 400px;
+    height: 200px;
+    background-color: cornflowerblue;
+    float: right;
+}
+#title{
+    text-align: center;
+    color: burlywood;
+}
+
+#text1{
+    color: aquamarine;
+}
+#text2{
+    color: rgb(231, 111, 111);
+}
+
+#footer{
+    clear: both;
+    width: 800px;
+    height: 100px;
+    background-color: rgb(96, 207, 96);
+    color: azure;
+}

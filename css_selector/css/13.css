@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: aquamarine;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+/* :active  마우스로 누르고 있을때 반응 */
+button:active{background-color: blue;}
+
+/* :hover 마우스를 위에 올린 상태 */
+button:hover{background-color: cadetblue;}
+
+/* :link 방문하지 않은 상태 */
+div a:link{color: red;}
+
+/* :visited 방문한 상태 */
+div a:visited{color: aqua;}
+
+/* naver 글자가 평상시에는 언더라인 없고 마우스를 갖다대면 언더라인 생김 */
+.naver a{text-decoration: none; color: rgb(30, 174, 210);}
+.naver a:hover{text-decoration: underline;}
+
+/* 이미지에 마우스를 올리면 손가락나오게, 투명하게 */
+#img img{cursor: pointer;}
+#img img:hover{opacity: 0.3;}
+
+/*  */
+article a:hover img{opacity: 0.8;}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-of-type a{text-decoration: none; color: aquamarine;}
+        p:nth-of-type(2){text-decoration: underline;}
+        p:nth-of-type(3){text-decoration: overline;}
+        p:nth-of-type(4){text-decoration: line-through;}
+
+        h3+a{text-decoration: none;}
+        h3+a:hover{text-decoration: underline;}
+        /* + ,~ 는 동위선택자이므로 같은동급사이의 관계 */
+    </style>
+</head>
+<body>
+    <h1>밑줄 관련 속성 : text-decoration</h1>
+    <p><a href="#">밑줄없음</a></p>
+    <p>아래밑줄</p>
+    <p>위로밑줄</p>
+    <p>중간취소선</p>
+
+    <hr>
+    <h3>Quiz. a태그에 평상시에는 언더라인 없다가 마우스 글자위로 올라가면 언더라인 생김</h3>
+    <a href="#">Underline On&Off</a>
+</body>
+</html>

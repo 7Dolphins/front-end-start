@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* div align center  */
+    /* div */
+.wrap{    width: 800px;    height: 400px;    margin: auto;}
+
+    /* header  */
+.header{width: 800px; height: 100px; background-color: aquamarine;}
+.logo{color: rgb(0, 68, 255);}
+
+    /* nav  */
+.nav{width: 150px; height: 200px; background-color: beige; float: left;}
+.text{background-color: cadetblue; color: aqua;}
+.text2{background-color: beige;}
+
+    /* section  */
+.section{width: 400px; height: 200px; background-color: chartreuse; float: right;}
+.title{text-align: center; color: blue;}
+
+    /* footer  */
+.footer{clear:both; /*float 속성 따라가는 것 없애기*/
+    width: 800px; height: 100px; background-color: rgb(171, 141, 240);}

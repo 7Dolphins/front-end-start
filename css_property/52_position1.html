@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            text-align: center; line-height: 100px;
+        }
+        .box1{background-color: aquamarine;}
+        
+        /* relative
+        : top, left, right, bottom 값이 현재 위치한 곳에서부터 이동 
+        : 기준설정할때도 사용*/
+        .box2{background-color: aqua;
+        position: relative; top:50px; left: 150px; }
+
+        /*absolute
+            : top, left, right, bottom값을 주면 최상위요소(body, html) 기준으로 이동*/    
+        .box3{background-color: rgb(9, 255, 0);
+            position: absolute; top:50px; left:150px;}
+
+        /* fixed
+            : 최상위요소(body, html) 기준으로 이동
+            : 고정
+            : 메뉴 상단, 햄버거버튼, 검정색배경, top버튼 등등
+             */    
+        .box4{background-color: rgb(200, 150, 247);
+            position : fixed; right:0; bottom:0;}
+    </style>
+</head>
+<body>
+    <div class="box1">static</div>
+    <div class="box2">relative</div>
+    <div class="box3">absolute</div>
+    <div class="box4">fixed</div>
+</body>
+</html>

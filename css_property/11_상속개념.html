@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit</title>
+    <style>
+        div{
+            width: 300px;
+            border: 1px solid blue;
+            margin-top: 20px;
+            padding: 10px;
+
+            color: red;
+        }
+        div a{color: inherit;}
+        /*   a는 링크태그라서 직접적으로 선택해야지만 변경됨 */
+        
+    </style>
+</head>
+<body>
+    <a href="#">일반링크</a>
+    <div> <!-- 부모 -->
+        div영역
+        <p>p영역</p> <!-- 자식1 -->
+        <a href="#">inherit</a> <!-- 자식2-->
+    </div>
+</body>
+</html>

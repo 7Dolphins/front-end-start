@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{width: 300px; height: 300px; border: 1px solid blue;}
+        td{border: 1px solid blue;}
+
+        .table1{empty-cells: show;}
+        .table2{empty-cells: hide;}
+        .table3{empty-cells: hide; border-collapse: collapse;}
+        .table4{empty-cells: hide; border-color: transparent;border-spacing: 10px}
+        .table4 td{border-color: transparent; background-color: rgb(175, 241, 219);
+        }
+
+    </style>
+</head>
+<body>
+    <h3>empty-cells:show</h3>
+    <table class="table1">
+        <caption>제목이 들어가는곳</caption>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>empty-cells:hide</h3>
+    <table class="table2">
+        <caption>제목이 들어가는곳</caption>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>empty-cells:border-collapse가 적용되면 empty-cells속성은 의미가 없다.</h3>
+    <table class="table3">
+        <caption>제목이 들어가는곳</caption>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td></td>
+        </tr>
+    </table>
+    
+    
+    
+    <table class="table4">
+        <caption>제목이 들어가는곳</caption>
+        <tr>
+            <td></td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
